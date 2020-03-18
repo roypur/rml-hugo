@@ -1,3 +1,16 @@
 backend:
   name: github
   branch: roypur/rml-hugo
+media_folder: "static/media"
+public_folder: "/media"
+
+collections:
+  - name: "blog"
+    label: "blog"
+    folder: "content/post"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Body", name: "body", widget: "markdown"}
