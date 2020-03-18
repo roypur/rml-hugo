@@ -1,6 +1,6 @@
 backend:
   name: github
-  branch: roypur/rml-hugo
+  repo: roypur/rml-hugo
 media_folder: "static/media"
 public_folder: "/media"
 
